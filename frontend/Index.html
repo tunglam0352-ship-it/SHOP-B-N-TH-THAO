@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LÂM SPORT</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">LÂM SPORT</div>
+
+        <nav>
+            <a href="#">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="#">Liên hệ</a>
+        </nav>
+    </header>
+
+    <section class="banner">
+        <h1>CỬA HÀNG THỂ THAO LÂM SPORT</h1>
+    </section>
+
+    <section class="category">
+
+        <button onclick="filterProducts('all')">Tất cả</button>
+
+        <button onclick="filterProducts('Giày')">Giày</button>
+
+        <button onclick="filterProducts('Áo')">Áo</button>
+
+        <button onclick="filterProducts('Phụ kiện')">Phụ kiện</button>
+
+    </section>
+
+    <section class="products" id="products">
+
+    </section>
+
+    <div class="modal" id="modal">
+
+        <div class="modal-content">
+
+            <span class="close" onclick="closeModal()">×</span>
+
+            <img id="modal-img">
+
+            <h2 id="modal-name"></h2>
+
+            <p id="modal-type"></p>
+
+            <p id="modal-price" class="price"></p>
+
+            <p id="modal-desc"></p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
